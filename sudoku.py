@@ -203,10 +203,11 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         start_board = sys.argv[1]
     else:
-        print("Provided command-line argument!")
+        print("Provide command-line argument!")
         sys.exit()
 
-    if len(start_board) < 9:
+    if len(start_board) < 81:
+        print("Input full board!")
         sys.exit()
 
     # Parse boards to dict representation, scanning board L to R, Up to Down
